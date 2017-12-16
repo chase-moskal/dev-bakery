@@ -3,7 +3,7 @@ import {observable} from "mobx"
 import {h, Component} from "preact"
 import {observer} from "mobx-preact"
 
-import {ShopStore} from "../shop"
+import ShopStore from "../shop-store"
 import Counter, {CounterStore} from "./counter"
 
 export interface AppProps {

@@ -7,9 +7,9 @@
 		"lib": ["es6", "dom"],
 		"module": "commonjs",
 		"moduleResolution": "node",
+		"experimentalDecorators": true,
 		"jsx": "react",
 		"jsxFactory": "h",
-		"experimentalDecorators": true,
 		"sourceMap": true
 	}
 }
