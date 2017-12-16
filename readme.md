@@ -1,5 +1,0 @@
-
-dev-bakery
-==========
-
-***experimental ecommerce*** 
