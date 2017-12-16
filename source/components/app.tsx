@@ -1,9 +1,7 @@
 
-import * as React from "react"
-import * as ReactDOM from "react-dom"
-
 import {observable} from "mobx"
-import {observer} from "mobx-react"
+import {h, Component} from "preact"
+import {observer} from "mobx-preact"
 
 import {ShopStore} from "../shop"
 import Counter, {CounterStore} from "./counter"
@@ -14,7 +12,7 @@ export interface AppProps {
 }
 
 @observer
-export default class App extends React.Component<AppProps> {
+export default class App extends Component<AppProps, {}> {
 	render() {
 		const {shop, counter} = this.props
 		return (

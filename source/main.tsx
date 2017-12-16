@@ -1,6 +1,5 @@
 
-import * as React from "react"
-import * as ReactDOM from "react-dom"
+import {h, render} from "preact"
 
 import App from "./components/app"
 import {CounterStore} from "./components/counter"
@@ -17,7 +16,7 @@ const shop = new ShopStore({
 const counter = new CounterStore()
 
 const app = <App {...{shop, counter}}/>
-ReactDOM.render(app, document.querySelector("#app"))
+render(app, document.querySelector("#app"))
 
 shop.fetch({collectionId: 424441479})
 	.catch(error => console.error(error))
