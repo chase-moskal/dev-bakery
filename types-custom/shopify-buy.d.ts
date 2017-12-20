@@ -30,7 +30,7 @@ declare module "shopify-buy" {
 	}
 
 	export interface Collection {
-		products: any[]
+		products: Product[]
 	}
 
 	export interface Checkout {
