@@ -6,8 +6,6 @@ import {buildClient, Config, Client, Product, Collection} from "shopify-buy"
 
 import ProductDisplay, {ProductDisplayStore} from "./product-display"
 
-export {Config as ShopifyConfig}
-
 export const createShopifyClient = (config: Config) => buildClient(config)
 
 export class StorefrontStore {

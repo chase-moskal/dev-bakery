@@ -16,7 +16,7 @@ export default observer(({store}: {store: ProductDisplayStore}) => (
 	<section class="product-display">
 
 		<h1>{store.product.title} — ${store.product.variants[0].price}</h1>
-	
+
 		<figure class="product-display-figure">
 			<img alt="" src={
 				store.product.images && store.product.images.length
