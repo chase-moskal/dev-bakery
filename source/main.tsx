@@ -24,6 +24,7 @@ const storefrontStore = new StorefrontStore({
 // render the storefront view with the mobx store
 render(<Storefront store={storefrontStore}/>, document.querySelector("#storefront"))
 
+// initialize the storefront by loading some products
 ;(async function initStorefrontProducts() {
 	const collectionId = "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzQyNDQ0MTQ3OQ=="
 	const products = storefrontStore.products = await storefrontStore.fetchProducts({collectionId})
